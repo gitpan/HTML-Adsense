@@ -1,15 +1,12 @@
----
-name: HTML-Adsense
-version: 0.1
-author:
-  - 'Nick Gerakines <nick@gerakines.net>'
-abstract: Create adsense widgets easily
-license: perl
-build_requires:
-  Class::Accessor: 0
-  Test::More: 0
-provides:
-  HTML::Adsense:
-    file: lib/HTML/Adsense.pm
-    version: 0.1
-generated_by: Module::Build version 0.2612
+# http://module-build.sourceforge.net/META-spec.html
+#XXXXXXX This is a prototype!!!  It will change in the future!!! XXXXX#
+name:         HTML-Adsense
+version:      0.2
+version_from: lib/HTML/Adsense.pm
+installdirs:  site
+requires:
+    Class::Accessor:               0
+    Test::More:                    0
+
+distribution_type: module
+generated_by: ExtUtils::MakeMaker version 6.17

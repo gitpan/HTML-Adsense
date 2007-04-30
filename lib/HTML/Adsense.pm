@@ -1,13 +1,15 @@
 package HTML::Adsense;
 
-use warnings;
 use strict;
+use warnings;
+
+use Class::Accessor;
 
 use base qw(Class::Accessor);
 
 HTML::Adsense->mk_accessors(qw(client width height format type channel border bg link text url));
 
-our $VERSION = '0.1';
+our $VERSION = '0.2';
 
 sub new {
 	my ($class, %args) = @_;
